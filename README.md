@@ -133,25 +133,7 @@ Distribusi rating dan item divisualisasikan untuk memahami skala data dan perseb
 
 ### Exploratory Data Analysis (EDA)
 
-#### 1. Distribusi Rating
-
-Distribusi nilai `rating` menunjukkan bahwa sebagian besar pengguna memberikan rating tinggi (4 dan 5), yang mengindikasikan adanya skew positif.
-
-```
-sns.histplot(data=rating_df, x='rating', bins=5, kde=False)
-plt.title('Distribusi Rating Pengguna')
-plt.xlabel('Rating')
-plt.ylabel('Jumlah')
-plt.show()
-
-```
-
-**Insight**:
-
-* Mayoritas rating berada pada kisaran 4 dan 5.
-* Hanya sebagian kecil pengguna yang memberikan rating di bawah 3.
-
-#### 2. Distribusi Interaksi Film
+#### 1. Distribusi Interaksi Film
 
 Distribusi `item_id` menunjukkan film mana yang paling banyak dinilai pengguna.
 
@@ -162,6 +144,7 @@ plt.xlabel('ID Film')
 plt.ylabel('Jumlah Interaksi')
 plt.show()
 
+![ss4](https://github.com/user-attachments/assets/2c23cee5-6d86-4dc2-b22c-225f3edc8e06)
 ```
 
 **Insight**:
@@ -169,7 +152,7 @@ plt.show()
 * Beberapa film mendapatkan jumlah interaksi yang jauh lebih tinggi dari yang lain.
 * Kemungkinan besar film populer atau film dengan rating tinggi.
 
-####3. Distribusi Rating Berdasarkan Pengguna dan Film
+#### 2. Distribusi Rating Berdasarkan Pengguna dan Film
 
 Fungsi `plot_rating_distribution()` digunakan untuk menganalisis distribusi rating berdasarkan `user_id` dan `item_id`.
 
@@ -178,6 +161,10 @@ plot_rating_distribution(rating_df, title='Distribusi Rating')
 plot_rating_distribution(rating_df, groupby_col='user_id', title='Distribusi Rating Berdasarkan User ID')
 plot_rating_distribution(rating_df, groupby_col='item_id', title='Distribusi Rating Berdasarkan Film')
 
+![ss1](https://github.com/user-attachments/assets/a0267d78-b51b-47b6-b45e-ac1dff12713e)
+![ss2](https://github.com/user-attachments/assets/9aa58dde-a970-4a80-8d66-f45dc070ef34)
+![ss3](https://github.com/user-attachments/assets/f674d45d-fc09-4dcb-a37a-d0080841d90c)
+
 ```
 
 **Insight**:
@@ -185,7 +172,7 @@ plot_rating_distribution(rating_df, groupby_col='item_id', title='Distribusi Rat
 * Beberapa pengguna memberikan lebih banyak rating daripada yang lain.
 * Distribusi rating per film menunjukkan bahwa hanya sebagian film yang memiliki interaksi tinggi.
 
-#### 4. Pemeriksaan Duplikasi dan Missing Values
+#### 3. Pemeriksaan Duplikasi dan Missing Values
 
 ```
 movie_df.isnull().sum()
