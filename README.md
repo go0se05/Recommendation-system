@@ -131,9 +131,9 @@ Distribusi rating dan item divisualisasikan untuk memahami skala data dan perseb
 
 ---
 
-#### Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 
-1. Distribusi Rating
+#### 1. Distribusi Rating
 
 Distribusi nilai `rating` menunjukkan bahwa sebagian besar pengguna memberikan rating tinggi (4 dan 5), yang mengindikasikan adanya skew positif.
 
@@ -151,7 +151,7 @@ plt.show()
 * Mayoritas rating berada pada kisaran 4 dan 5.
 * Hanya sebagian kecil pengguna yang memberikan rating di bawah 3.
 
-2. Distribusi Interaksi Film
+#### 2. Distribusi Interaksi Film
 
 Distribusi `item_id` menunjukkan film mana yang paling banyak dinilai pengguna.
 
@@ -169,7 +169,7 @@ plt.show()
 * Beberapa film mendapatkan jumlah interaksi yang jauh lebih tinggi dari yang lain.
 * Kemungkinan besar film populer atau film dengan rating tinggi.
 
-3. Distribusi Rating Berdasarkan Pengguna dan Film
+####3. Distribusi Rating Berdasarkan Pengguna dan Film
 
 Fungsi `plot_rating_distribution()` digunakan untuk menganalisis distribusi rating berdasarkan `user_id` dan `item_id`.
 
@@ -185,7 +185,7 @@ plot_rating_distribution(rating_df, groupby_col='item_id', title='Distribusi Rat
 * Beberapa pengguna memberikan lebih banyak rating daripada yang lain.
 * Distribusi rating per film menunjukkan bahwa hanya sebagian film yang memiliki interaksi tinggi.
 
-4. Pemeriksaan Duplikasi dan Missing Values
+#### 4. Pemeriksaan Duplikasi dan Missing Values
 
 ```
 movie_df.isnull().sum()
