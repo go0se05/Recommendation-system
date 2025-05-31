@@ -144,8 +144,8 @@ plt.xlabel('ID Film')
 plt.ylabel('Jumlah Interaksi')
 plt.show()
 
-![ss4](https://github.com/user-attachments/assets/2c23cee5-6d86-4dc2-b22c-225f3edc8e06)
 ```
+![ss4](https://github.com/user-attachments/assets/2c23cee5-6d86-4dc2-b22c-225f3edc8e06)
 
 **Insight**:
 
@@ -161,11 +161,11 @@ plot_rating_distribution(rating_df, title='Distribusi Rating')
 plot_rating_distribution(rating_df, groupby_col='user_id', title='Distribusi Rating Berdasarkan User ID')
 plot_rating_distribution(rating_df, groupby_col='item_id', title='Distribusi Rating Berdasarkan Film')
 
+```
+
 ![ss1](https://github.com/user-attachments/assets/a0267d78-b51b-47b6-b45e-ac1dff12713e)
 ![ss2](https://github.com/user-attachments/assets/9aa58dde-a970-4a80-8d66-f45dc070ef34)
 ![ss3](https://github.com/user-attachments/assets/f674d45d-fc09-4dcb-a37a-d0080841d90c)
-
-```
 
 **Insight**:
 
