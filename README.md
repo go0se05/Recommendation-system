@@ -131,9 +131,9 @@ Distribusi rating dan item divisualisasikan untuk memahami skala data dan perseb
 
 ---
 
-### Exploratory Data Analysis (EDA)
+#### Exploratory Data Analysis (EDA)
 
-#### 1. Distribusi Rating
+1. Distribusi Rating
 
 Distribusi nilai `rating` menunjukkan bahwa sebagian besar pengguna memberikan rating tinggi (4 dan 5), yang mengindikasikan adanya skew positif.
 
@@ -151,7 +151,7 @@ plt.show()
 * Mayoritas rating berada pada kisaran 4 dan 5.
 * Hanya sebagian kecil pengguna yang memberikan rating di bawah 3.
 
-#### 2. Distribusi Interaksi Film
+2. Distribusi Interaksi Film
 
 Distribusi `item_id` menunjukkan film mana yang paling banyak dinilai pengguna.
 
@@ -169,7 +169,7 @@ plt.show()
 * Beberapa film mendapatkan jumlah interaksi yang jauh lebih tinggi dari yang lain.
 * Kemungkinan besar film populer atau film dengan rating tinggi.
 
-#### 3. Distribusi Rating Berdasarkan Pengguna dan Film
+3. Distribusi Rating Berdasarkan Pengguna dan Film
 
 Fungsi `plot_rating_distribution()` digunakan untuk menganalisis distribusi rating berdasarkan `user_id` dan `item_id`.
 
@@ -185,7 +185,7 @@ plot_rating_distribution(rating_df, groupby_col='item_id', title='Distribusi Rat
 * Beberapa pengguna memberikan lebih banyak rating daripada yang lain.
 * Distribusi rating per film menunjukkan bahwa hanya sebagian film yang memiliki interaksi tinggi.
 
-#### 4. Pemeriksaan Duplikasi dan Missing Values
+4. Pemeriksaan Duplikasi dan Missing Values
 
 ```
 movie_df.isnull().sum()
@@ -284,16 +284,16 @@ Hasil pelatihan model selama 10 epoch menunjukkan bahwa nilai RMSE pada data tra
 * Digunakan baik untuk data training maupun validasi.
 | Epoch | RMSE (Train) | RMSE (Validation) |
 | ----- | ------------ | ----------------- |
-| 1     | 0.2887       | 0.2567            |
-| 2     | 0.2536       | 0.2488            |
-| 3     | 0.2459       | 0.2450            |
-| 4     | 0.2434       | 0.2421            |
-| 5     | 0.2413       | 0.2421            |
-| 6     | 0.2406       | 0.2418            |
-| 7     | 0.2404       | 0.2419            |
-| 8     | 0.2404       | 0.2424            |
-| 9     | 0.2392       | 0.2424            |
-| 10    | 0.2383       | 0.2422            |
+| 1     | 0.2881       | 0.2563            |
+| 2     | 0.2533       | 0.2473            |
+| 3     | 0.2464       | 0.2451            |
+| 4     | 0.2438       | 0.2426            |
+| 5     | 0.2413       | 0.2423            |
+| 6     | 0.2391       | 0.2427            |
+| 7     | 0.2413       | 0.2428            |
+| 8     | 0.2395       | 0.2425            |
+| 9     | 0.2394       | 0.2423            |
+| 10    | 0.2396       | 0.2421            |
 
 * RMSE pada data pelatihan menurun secara konsisten, menunjukkan model belajar representasi preferensi pengguna dengan baik.
 
