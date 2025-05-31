@@ -269,6 +269,7 @@ Hasil pelatihan model selama 10 epoch menunjukkan bahwa nilai RMSE pada data tra
 
 * RMSE mengukur rata-rata galat prediksi.
 * Digunakan baik untuk data training maupun validasi.
+  
 | Epoch | RMSE (Train) | RMSE (Validation) |
 | ----- | ------------ | ----------------- |
 | 1     | 0.2881       | 0.2563            |
