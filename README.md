@@ -105,7 +105,9 @@ Pemilihan akhir menggunakan collaborative filtering berbasis deep learning karen
 
 ### Sumber Dataset
 
-Proyek ini menggunakan dua sumber data utama dari GitHub repository:
+Dataset diperoleh dari Kaggle : [Movie recommender system](https://www.kaggle.com/datasets/dev0914sharma/dataset)
+
+Menggunakan dua sumber dataset sebagai berikut :
 
 * **Movie\_Id\_Titles.csv**: Berisi daftar judul film dan ID-nya.
 * **Dataset.csv**: Berisi data interaksi pengguna dengan film, termasuk `user_id`, `item_id`, `rating`, dan `timestamp`.
